@@ -29,7 +29,7 @@ function getCityLocation(){
     getApiDataFromCityName()
 }
 function getApiDataFromCityName(){
-    let promise = axios.get(`${url}/geo/1.0/direct?q=${cityName}&limit=10&appid=${apiKey}`);
+    let promise = axios.get(`${url}geo/1.0/direct?q=${cityName}&limit=10&appid=${apiKey}`);
     promise.then(getCityLatELon);
     promise.catch((errorNum) => {
         alert(`Select a valid location!`)
