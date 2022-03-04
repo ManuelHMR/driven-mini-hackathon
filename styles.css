@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    color: white;
+}
+.weather-box{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+    top: 20%;
+}
+.weather-box h1{
+    font-size: 50px;
+    text-align: center;
+}
+.weather-box h2{
+    width: 200px;
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+.current-weather {
+    font-size: 40px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.min-max{
+    display: flex;
+    margin-top: 10px;
+    width: 200px;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.min-max h5{
+    margin-top: 10px;
+}
+.search{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    bottom: 20%; 
+}
+.search input {
+    background-color: none;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    height: 30px;
+    opacity: 0.7;
+}
+input:focus {
+    outline: 0;
+    opacity: 1;
+}
+button {
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 0px solid black;
+    width: 30px;
+    height: 30px;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:hover {
+    opacity: 1;
+    transition: 500ms;
+    transform: scale(1.1);
+}
+.Clouds{
+    background-image: linear-gradient(rgba(55,55,193,1) 0%, rgba(108,230,255,1) 115%);
+    color: white;
+}
+.Clear{
+    background-image: linear-gradient(rgba(255,253,219,1) 0%, rgba(255,214,86,1) 115%);
+    color: #2B2300;
+}
+.Snow{
+    background-image: linear-gradient(#AAD688 0%, #98C377 115%);
+    color: #47894B;
+}
+.Rain{
+    background-image: linear-gradient(rgba(55,55,193,1) 0%, rgba(108,230,255,1) 115%);
+    color: white;
+}
+.default{
+    background-image: black;
+    color: white;
+}
