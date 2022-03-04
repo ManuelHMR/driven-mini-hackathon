@@ -1,4 +1,4 @@
-const url = "http://api.openweathermap.org/";
+const url = "https://api.openweathermap.org/";
 const apiKey = `393eeb90be3bedb143a4dd6632d378b4`;
 let lat;
 let lon;
